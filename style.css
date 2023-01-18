@@ -1,0 +1,570 @@
+root {
+    --font-200: komet, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    
+    --font-400: komet, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    --font-700: komet, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    --font-900: komet, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: ropa-mix-pro,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+}
+
+h2 {
+    font-family: ropa-mix-pro,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    font-family: ropa-mix-pro,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+   
+    font-size: .9375rem;
+    color: white;
+   }
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+p {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    font-family: ropa-mix-pro,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+   
+    font-size: .9375rem;
+    color: white;
+}
+
+.nav-container {
+    background-color: #1e4078;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin-bottom: 0;
+  
+  
+   
+}
+
+
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-image {
+    max-width: 15rem;
+    
+}
+
+.hero-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "a"
+    "b";
+    background-image: url("images/ivan-doig-hero-background-image.jpg");
+    background-position: right, top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    margin-top: 0;
+    max-height: 100%;
+   
+}
+
+.hero-item {
+    grid-area: b;
+    display: grid;
+    align-self: end;
+    width: 100%;
+  
+}
+
+
+
+
+.ivan-doig-logo {
+    width: 100%;
+   
+    margin: auto auto;
+    
+
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    /*background-image: url("images/about-top-small.svg");
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: auto 4rem, auto;*/
+    margin-top: 0;
+    padding: 0;
+    background-color: #1e4078;
+    margin-bottom: 0;
+  
+}
+
+.about-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-top: rem;
+    width: 90%;
+    margin: auto auto auto auto;
+    text-align: center;
+   
+}
+
+
+
+.header {
+     margin: 0;
+    padding: 0;
+}
+
+.subheader {
+    margin: 0;
+    padding: 0;
+}
+
+
+.about-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+    padding-top: 1rem;
+    width: 100%;
+    margin: auto auto auto auto;
+    
+   
+}
+
+.image-gridbox-one {
+    display: grid;
+    width: 100%;
+    background-color: rgb(249, 91, 117);
+    background-image: url("images/ivan-doig-sitting-on-car.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    position: relative;
+}
+
+.image-gridbox-two {
+    display: grid;
+    width: 100%;
+    background-color: pink;
+    background-image: url("images/ivan-doig-on-farm-tool.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    position: relative;
+}
+
+.photo-caption {
+    position: absolute;
+    top: 87%;
+    font-family: ropa-mix-pro,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+   
+    font-size: .9375rem;
+    color: white;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    
+}
+
+
+
+.watch-container{
+    background-color: black;
+    background-image: url("images/doig-paper-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    /*background-image: url("images/about-top-small.svg");
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: auto 4rem, auto;*/
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.watch-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    width: 90%;
+    margin: auto auto auto auto;
+    text-align: center;
+
+}
+
+
+.video-container {
+    display: grid;
+    position: relative;
+    width: 100%;
+    margin: 3rem auto 10rem auto;
+    padding-bottom: 56.25%; 
+    height: 0;
+
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+.film-maker-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/about-top-small.svg");
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: auto 4rem, auto;
+    margin-top: 0;
+   
+    background-color: #1e4078;
+    margin-bottom: 0;
+    width: 100%;
+
+}
+
+.film-maker-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 0;
+    padding-bottom: 0rem;
+    margin-bottom: 0;
+    width: 100%;
+
+}
+
+.film-maker-header {
+    display: grid;
+    text-align: center;
+    margin-top: 7rem;
+    padding-bottom: 0rem;
+    margin: 7rem auto auto auto;
+    width: 90%;
+}
+
+.film-maker-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0rem;
+    
+    width: 95%;
+    margin: auto auto auto auto;
+    text-align: center;
+
+}
+
+.portrait-image {
+    width: 100%;
+}
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: black;
+    padding: 2rem 0 2rem 0;
+  
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-link {
+    font-family: ropa-mix-pro,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: .9375rem;
+    color: white;
+    padding: .75rem;
+
+}
+
+
+
+
+@media (min-width: 1200px) {
+    
+    
+    .hero-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        background-image: url("images/ivan-doig-hero-background-image.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 90vh;
+        margin-top: 0;
+        max-height: 100%;
+       
+    }
+
+    .hero-item {
+        justify-self: center;
+        align-items: center;
+        
+    }
+  
+
+    .ivan-doig-logo {
+        filter: invert(70%) sepia(14%) saturate(6359%) hue-rotate(185deg) brightness(92%) contrast(94%);
+        max-width: 50rem;
+        
+       }
+
+    .about-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+        width: 900px;
+        margin: auto auto auto auto;
+        text-align: center;
+        
+    }
+
+    .film-maker-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+        width: 900px;
+        margin: auto auto auto auto;
+        text-align: center;
+    
+    }
+
+    h1 {
+        font-family: ropa-mix-pro,sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 8rem;
+        color: white;
+    }
+
+    p {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        font-family: ropa-mix-pro,sans-serif;
+        font-weight: 200;
+        font-style: normal;
+       
+        font-size: 1.25rem;
+        color: white;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 0;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        background-color: black;
+        
+    }
+
+   
+    .image-gridbox-one {
+        display: grid;
+        width: 100%;
+        background-color: rgb(249, 91, 117);
+        background-image: url("images/ivan-doig-sitting-on-car.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50rem;
+        position: relative;
+    }
+    
+    .image-gridbox-two {
+        display: grid;
+        width: 100%;
+        background-color: pink;
+        background-image: url("images/ivan-doig-on-farm-tool.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50rem;
+        position: relative;
+    }
+
+    .photo-caption {
+        position: absolute;
+        top: 87%;
+        font-family: ropa-mix-pro,sans-serif;
+        font-weight: 200;
+        font-style: normal;
+       
+        font-size: .9375rem;
+        color: white;
+        padding: 2rem;
+    }
+
+
+    .video-container {
+        display: grid;
+        position: relative;
+        width: 80%;
+        margin: 5rem auto 10rem auto;
+        padding-bottom: 56.25%; 
+        height: 0;
+    
+      }
+    
+      .video-container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .film-maker-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 0;
+        padding-bottom: 5rem;
+        margin-bottom: 0;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10rem;
+     
+    
+    }
+
+    .film-maker-header {
+        display: grid;
+        text-align: center;
+        margin-top: 7rem;
+        padding-bottom: 0rem;
+        margin: 7rem auto auto auto;
+        width: 60%;
+    }
+
+    .film-maker-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        margin: auto auto auto auto;
+        
+        width: 80%;
+        
+        text-align: center;
+    
+    }
+
+    .portrait-image {
+        width: 500px;
+        margin: auto auto auto auto;
+    }
+
+    .footer-grid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        
+    }
+
+}
+
+
