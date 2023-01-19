@@ -131,8 +131,8 @@ p {
 
 
 .ivan-doig-logo {
-    width: 100%;
-   
+    width: 90%;
+    
     margin: auto auto;
     
 
@@ -148,7 +148,7 @@ p {
     background-repeat: repeat-x;
     background-size: auto 4rem, auto;*/
     margin-top: 0;
-    padding: 0;
+    padding: 3rem 0 0 0;
     background-color: #1e4078;
     margin-bottom: 0;
   
@@ -178,6 +178,14 @@ p {
     padding: 0;
 }
 
+h1.header.watch {
+    color: #1e4078;
+
+}
+
+h2.subheader.preview {
+    color: #1e4078;
+}
 
 .about-grid {
     display: grid;
@@ -377,7 +385,9 @@ p {
     .hero-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        align-items: center;
+        grid-template-rows: 0 0;
+        justify-content: center;
+        align-content: center;
         background-image: url("images/ivan-doig-hero-background-image.jpg");
         background-position: top;
         background-repeat: no-repeat;
@@ -389,15 +399,18 @@ p {
     }
 
     .hero-item {
-        justify-self: center;
-        align-items: center;
-        
+       
+       align-self: center;
+       
+       
     }
   
 
     .ivan-doig-logo {
         filter: invert(70%) sepia(14%) saturate(6359%) hue-rotate(185deg) brightness(92%) contrast(94%);
         max-width: 50rem;
+        
+        
         
        }
 
@@ -442,7 +455,7 @@ p {
         font-weight: 200;
         font-style: normal;
        
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         color: white;
     }
 
