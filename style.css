@@ -476,7 +476,7 @@ h2.subheader.preview {
     .image-gridbox-one {
         display: grid;
         width: 100%;
-        background-color: rgb(249, 91, 117);
+        background-color: #1e4078;
         background-image: url("images/ivan-doig-sitting-on-car.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -488,7 +488,7 @@ h2.subheader.preview {
     .image-gridbox-two {
         display: grid;
         width: 100%;
-        background-color: pink;
+        background-color: #1e4078;
         background-image: url("images/ivan-doig-on-farm-tool.jpg");
         background-position: center;
         background-repeat: no-repeat;
