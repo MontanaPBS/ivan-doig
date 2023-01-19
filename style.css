@@ -71,7 +71,7 @@ p {
     font-weight: 300;
     font-style: normal;
    
-    font-size: .9375rem;
+    font-size: 1.2rem;
     color: white;
 }
 
@@ -294,8 +294,7 @@ h2.subheader.preview {
 .film-maker-container {
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
+   
     background-image: url("images/about-top-small.svg");
     background-position: top;
     background-repeat: repeat-x;
@@ -304,42 +303,24 @@ h2.subheader.preview {
    
     background-color: #1e4078;
     margin-bottom: 0;
-    width: 100%;
+   
 
 }
 
 .film-maker-grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-   
-    margin-top: 0;
-    padding-bottom: 0rem;
-    margin-bottom: 0;
-    width: 100%;
+    
 
 }
 
 .film-maker-header {
-    display: grid;
+    padding-top: 5rem;
     text-align: center;
-    margin-top: 7rem;
-    padding-bottom: 0rem;
-    margin: 7rem auto auto auto;
-    width: 90%;
 }
 
 .film-maker-item {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0rem;
-    
-    width: 95%;
-    margin: auto auto auto auto;
-    text-align: center;
+    max-width: 90%;
+    margin: auto auto;
+   
 
 }
 
