@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-    font-family: ropa-mix-pro,sans-serif;
+    font-family: montserrat, sans-serif;
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
@@ -39,7 +39,7 @@ h1 {
 }
 
 h2 {
-    font-family: ropa-mix-pro,sans-serif;
+    font-family: montserrat, sans-serif;
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
@@ -48,10 +48,9 @@ h2 {
 }
 
 h3 {
-    font-family: ropa-mix-pro,sans-serif;
-    font-weight: 300;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
     font-style: normal;
-   
     font-size: .9375rem;
     color: white;
    }
@@ -67,8 +66,8 @@ a {
 p {
     padding-top: 1rem;
     padding-bottom: 3rem;
-    font-family: ropa-mix-pro,sans-serif;
-    font-weight: 300;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
     font-style: normal;
    
     font-size: 1.2rem;
@@ -307,6 +306,10 @@ h2.subheader.preview {
 
 }
 
+.filmmaker-subheader {
+    text-align: center;
+}
+
 .film-maker-grid {
     
 
@@ -421,20 +424,20 @@ h2.subheader.preview {
     }
 
     h1 {
-        font-family: ropa-mix-pro,sans-serif;
-        font-weight: 700;
-        font-style: normal;
+        font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
         text-transform: uppercase;
-        font-size: 8rem;
+        font-size: 6rem;
         color: white;
     }
 
     p {
         padding-top: 1rem;
         padding-bottom: 2rem;
-        font-family: ropa-mix-pro,sans-serif;
-        font-weight: 200;
-        font-style: normal;
+        font-family: montserrat, sans-serif;
+    font-weight: 100;
+    font-style: normal;
        
         font-size: 1.5rem;
         color: white;
@@ -511,14 +514,15 @@ h2.subheader.preview {
 
       .film-maker-grid {
         display: grid;
+        justify-content: center;
+        align-content: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         margin-top: 0;
         padding-bottom: 5rem;
         margin-bottom: 0;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 90%;
+        margin: auto auto;
         padding-bottom: 10rem;
      
     
@@ -540,10 +544,14 @@ h2.subheader.preview {
         align-items: center;
         margin: auto auto auto auto;
         
-        width: 80%;
         
-        text-align: center;
+        
+        text-align: left;
     
+    }
+
+    .filmmaker-subheader {
+        text-align: center;
     }
 
     .portrait-image {
