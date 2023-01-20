@@ -311,7 +311,7 @@ h2.subheader.preview {
 }
 
 .film-maker-grid {
-    
+    padding-top: 4rem;
 
 }
 
@@ -323,6 +323,7 @@ h2.subheader.preview {
 .film-maker-item {
     max-width: 90%;
     margin: auto auto;
+    padding-top: 3rem;
    
 
 }
@@ -513,17 +514,11 @@ h2.subheader.preview {
       }
 
       .film-maker-grid {
+        padding: 3rem 0 0 0;
         display: grid;
-        justify-content: center;
-        align-content: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        margin-top: 0;
-        padding-bottom: 5rem;
-        margin-bottom: 0;
-        width: 90%;
-        margin: auto auto;
-        padding-bottom: 10rem;
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        
+    
      
     
     }
@@ -539,15 +534,17 @@ h2.subheader.preview {
 
     .film-maker-item {
         display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-        margin: auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
         
-        
-        
+        grid-template-areas: "image text ";
+        width: 80%;
         text-align: left;
     
+    }
+
+    .film-maker-content {
+        grid-area: text;
+        
     }
 
     .filmmaker-subheader {
@@ -564,6 +561,7 @@ h2.subheader.preview {
         flex-direction: row;
         align-items: center;
         align-content: center;
+
         
     }
 
