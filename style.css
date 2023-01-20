@@ -302,13 +302,12 @@ h2.subheader.preview {
    
     background-color: #1e4078;
     margin-bottom: 0;
+    padding-bottom: 5rem;
    
 
 }
 
-.filmmaker-subheader {
-    text-align: center;
-}
+
 
 .film-maker-grid {
     padding-top: 4rem;
@@ -326,6 +325,26 @@ h2.subheader.preview {
     padding-top: 3rem;
    
 
+}
+
+
+
+.film-maker-image-one {
+    background-image: url("images/nic-davis.jpg");
+    background-position: top;
+    background-size: cover;
+    min-height: 50vh;
+    margin-bottom: 3rem;
+   
+}
+
+.film-maker-image-two {
+    background-image: url("images/Scott-Sterling-Headshot.jpg");
+    background-position: top;
+    background-size: cover;
+    min-height: 50vh;
+    margin-bottom: 3rem;
+   
 }
 
 .portrait-image {
@@ -424,6 +443,10 @@ h2.subheader.preview {
     
     }
 
+    .film-maker-grid {
+        padding-bottom: 5rem;
+    }
+
     h1 {
         font-family: montserrat, sans-serif;
     font-weight: 700;
@@ -517,6 +540,8 @@ h2.subheader.preview {
         padding: 3rem 0 0 0;
         display: grid;
         grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 1rem;
+       
         
     
      
@@ -535,7 +560,7 @@ h2.subheader.preview {
     .film-maker-item {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+        gap: 2rem;
         grid-template-areas: "image text ";
         width: 80%;
         text-align: left;
