@@ -27,6 +27,7 @@ root {
 body {
     padding: 0;
     margin: 0;
+    line-height: 1.6;
 }
 
 h1 {
@@ -34,7 +35,7 @@ h1 {
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.1rem;
     color: white;
 }
 
@@ -43,7 +44,7 @@ h2 {
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: rgb(255, 255, 255);
 }
 
@@ -70,7 +71,7 @@ p {
     font-weight: 400;
     font-style: normal;
     margin: 0;
-    font-size: 1.2rem;
+    font-size: .87rem;
     color: white;
 }
 
@@ -78,9 +79,9 @@ p {
     background-color: #1e4078;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
+    justify-content: flex-start;
+    
+    padding: 1.2rem;
     margin-bottom: 0;
   
   
@@ -98,7 +99,7 @@ p {
 }
 
 .logo-image {
-    max-width: 15rem;
+    max-width: 10rem;
     
 }
 
@@ -153,12 +154,19 @@ p {
   
 }
 
+.subheader.airs {
+    padding: 1rem 0;
+    
+
+}
+
+
 .about-item {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    padding-top: rem;
+    padding-bottom: 3rem;
     width: 90%;
     margin: auto auto auto auto;
     text-align: center;
@@ -288,7 +296,9 @@ h2.subheader.preview {
     height: 100%;
   }
 
-
+.subheader.film {
+    padding-bottom: 1rem;
+}
 
 .film-maker-container {
     display: grid;
@@ -310,7 +320,7 @@ h2.subheader.preview {
 
 
 .film-maker-grid {
-    padding-top: 4rem;
+    padding-top: 0rem;
 
 }
 
@@ -322,7 +332,7 @@ h2.subheader.preview {
 .film-maker-item {
     max-width: 90%;
     margin: auto auto;
-    padding-top: 3rem;
+    padding-top: 4rem;
    
 
 }
@@ -334,6 +344,7 @@ h2.subheader.preview {
     background-position: top;
     background-size: cover;
     min-height: 50vh;
+    
     margin-bottom: 3rem;
    
 }
@@ -355,9 +366,11 @@ h2.subheader.preview {
 .sponsors-container {
     display: grid;
     grid-template-columns: 1fr;
-    align-content: center;
+    align-items: center;
+    justify-items: center;
+    
     /*background-image: url("images/doig-paper-background.jpg");*/
-    background-color: black;
+    background-color: #1e4078;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -366,18 +379,52 @@ h2.subheader.preview {
 .sponsor-text {
     display: grid;
     grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    max-width: 840px;
+    padding: 3rem 1rem 1rem 1rem;
+    margin: auto auto auto auto;
+    text-align: center;
+}
+
+.divider-graphic {
+    max-width: 20rem;
+    padding: 2rem 0;
+}
+
+h1.sponsor-name {
+    font-size: 2.1rem;
+}
+
+h1.sponsor-name-two {
+    font-size: 1.1rem;
+}
+
+.sponsor-images{
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     
-    width: 90%;
+    max-width: 840px;
+    padding: 3rem 1rem 1rem 1rem;
     margin: auto auto auto auto;
     text-align: center;
+}
+
+.production-logo{
+    max-width: 20rem;
+    padding: .5rem 0;
 }
 
 .sponsor-paragraphs {
     padding-top: 1rem;
 }
 
+p.provided-text {
+    padding: 1rem;
+
+}
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -405,6 +452,21 @@ h2.subheader.preview {
     padding: .75rem;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -489,7 +551,7 @@ h2.subheader.preview {
     font-weight: 100;
     font-style: normal;
        
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         color: white;
     }
 
@@ -606,6 +668,32 @@ h2.subheader.preview {
         width: 500px;
         margin: auto auto auto auto;
     }
+
+    .divider-graphic {
+        max-width: 60rem;
+        padding: 3rem 0;
+    }
+
+    .sponsor-images{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        
+        max-width: 840px;
+        padding: 3rem 1rem 1rem 1rem;
+        margin: auto auto auto auto;
+        text-align: center;
+    }
+
+
+
+        .logo-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
 
     .footer-grid {
         display: flex;
