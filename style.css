@@ -358,6 +358,15 @@ h2.subheader.preview {
    
 }
 
+.film-maker-image-three {
+    background-image: url("images/Bill-Pullman-closeup.jpg");
+    background-position: top;
+    background-size: cover;
+    min-height: 75vh;
+    margin-bottom: 3rem;
+   
+}
+
 .portrait-image {
     width: 100%;
 }
