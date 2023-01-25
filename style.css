@@ -363,7 +363,7 @@ h2.subheader.preview {
 }
 
 
-.sponsors-container {
+.sub-footer-container {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -376,7 +376,7 @@ h2.subheader.preview {
     width: 100%;
 }
 
-.sponsor-text {
+.sub-footer-text {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -392,15 +392,15 @@ h2.subheader.preview {
     padding: 2rem 0;
 }
 
-h1.sponsor-name {
+h1.vicky-name {
     font-size: 2.1rem;
 }
 
-h1.sponsor-name-two {
+h1.sub-footer-name-two {
     font-size: 1.1rem;
 }
 
-.sponsor-images{
+.sub-footer-images{
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -412,12 +412,16 @@ h1.sponsor-name-two {
     text-align: center;
 }
 
+.divider-graphic {
+
+    margin: auto auto;
+}
 .production-logo{
     max-width: 20rem;
     padding: .5rem 0;
 }
 
-.sponsor-paragraphs {
+.sub-footer-paragraphs {
     padding-top: 1rem;
 }
 
@@ -674,7 +678,7 @@ p.provided-text {
         padding: 3rem 0;
     }
 
-    .sponsor-images{
+    .sub-footer-images{
         display: grid;
         grid-template-rows: 1fr 1fr;
         justify-content: center;
