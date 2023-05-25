@@ -24,10 +24,20 @@ root {
 }
 
 
+
 body {
     padding: 0;
     margin: 0;
     line-height: 1.6;
+}
+
+button {
+    padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 h1 {
@@ -256,21 +266,23 @@ h2.subheader.preview {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding-bottom: 5rem;
+    
     /*background-image: url("images/about-top-small.svg");
     background-position: top;
     background-repeat: repeat-x;
     background-size: auto 4rem, auto;*/
-    margin-top: 0;
-    padding: 0;
-    margin-bottom: 0;
+   
 }
 
 .watch-item {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto ;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
+    padding: 4rem 0 4rem 0;
     width: 90%;
     margin: auto auto auto auto;
     text-align: center;
@@ -282,7 +294,7 @@ h2.subheader.preview {
     display: grid;
     position: relative;
     width: 100%;
-    margin: 3rem auto 10rem auto;
+    margin: 3rem auto 8rem auto;
     padding-bottom: 56.25%; 
     height: 0;
 
@@ -295,6 +307,23 @@ h2.subheader.preview {
     width: 100%;
     height: 100%;
   }
+
+.watch-passport {
+    display: grid;
+    background-color: #1e4078;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    margin: auto;
+  
+
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+   
+    font-size: 1.5rem;
+    color: white;
+
+}
+
 
 .subheader.film {
     padding-bottom: 1rem;
@@ -509,6 +538,10 @@ p.provided-text {
         
     }
 
+
+   
+
+
     .film-maker-item {
         display: grid;
         grid-template-columns: 1fr;
@@ -576,8 +609,8 @@ p.provided-text {
     .video-container {
         display: grid;
         position: relative;
-        width: 80%;
-        margin: 5rem auto 10rem auto;
+        width: 90%;
+        margin: 5rem auto 5rem auto;
         padding-bottom: 56.25%; 
         height: 0;
     
