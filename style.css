@@ -321,6 +321,7 @@ h2.subheader.preview {
 
 .film-maker-grid {
     padding-top: 0rem;
+    
 
 }
 
@@ -330,6 +331,7 @@ h2.subheader.preview {
 }
 
 .film-maker-item {
+    display: grid;
     max-width: 90%;
     margin: auto auto;
     padding-top: 4rem;
@@ -339,63 +341,11 @@ h2.subheader.preview {
 
 
 
-.film-maker-image-one {
-    background-image: url("images/nic-davis.jpg");
-    background-position: top;
-    background-size: cover;
-    min-height: 50vh;
-    
-    margin-bottom: 3rem;
-   
-}
 
-.film-maker-image-two {
-    background-image: url("images/Scott-Sterling-Headshot.jpg");
-    background-position: top;
-    background-size: cover;
-    min-height: 50vh;
-    margin-bottom: 3rem;
-   
-}
-
-.film-maker-image-three {
-    background-image: url("images/Aaron-Pruitt.JPG");
-    background-position: top;
-    background-size: cover;
-    min-height: 75vh;
-    margin-bottom: 3rem;
-   
-}
-
-.film-maker-image-four {
-    background-image: url("images/Sabrina-Lee.jpg");
-    background-position: top;
-    background-size: cover;
-    min-height: 75vh;
-    margin-bottom: 3rem;
-   
-}
-
-.film-maker-image-five {
-    background-image: url("images/tony-hale.png");
-    background-position: top;
-    background-size: cover;
-    min-height: 50vh;
-    margin-bottom: 3rem;
-   
-}
-
-.film-maker-image-six {
-    background-image: url("images/Bill-Pullman-closeup.jpg");
-    background-position: top;
-    background-size: cover;
-    min-height: 75vh;
-    margin-bottom: 3rem;
-   
-}
 
 .portrait-image {
     width: 100%;
+    padding-bottom: 2rem;
 }
 
 
@@ -608,31 +558,8 @@ p.provided-text {
         
     }
 
+ 
    
-    .image-gridbox-one {
-        display: grid;
-        width: 100%;
-        background-color: #1e4078;
-        background-image: url("images/ivan-doig-sitting-on-car.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50rem;
-        position: relative;
-    }
-    
-    .image-gridbox-two {
-        display: grid;
-        width: 100%;
-        background-color: #1e4078;
-        background-image: url("images/ivan-doig-on-farm-tool.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50rem;
-        position: relative;
-    }
-
     .photo-caption {
         position: absolute;
         top: 87%;
@@ -689,14 +616,15 @@ p.provided-text {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
-        grid-template-areas: "image text ";
-        width: 80%;
+       
+        width: auto;
         text-align: left;
     
     }
 
     .film-maker-content {
         grid-area: text;
+        font-size: 1rem;
         
     }
 
@@ -707,6 +635,21 @@ p.provided-text {
     .portrait-image {
         width: 500px;
         margin: auto auto auto auto;
+       
+    }
+
+
+    .sub-footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        margin-top: 17rem;
+        /*background-image: url("images/doig-paper-background.jpg");*/
+        background-color: #1e4078;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
     }
 
     .divider-graphic {
